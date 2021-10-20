@@ -1,0 +1,173 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"); */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: gray;
+    /* background-repeat: no-repeat; */
+    background-image:url("https://as1.ftcdn.net/v2/jpg/04/08/13/54/1000_F_408135462_W5iXGhvcbM3zhYYOqXYInvjFpFgeaOzx.jpg") ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    /* font-family: 'Anton', sans-serif;
+    font-family: 'Abril Fatface', cursive; */
+    font-size: 30px;
+
+
+}
+
+.head{
+    margin-right:23rem; 
+
+    color: rgb(255, 255, 255);
+    
+
+}
+/* .line {
+    margin: 0 10%;
+    width: 80%;
+    border-bottom: 5px rgb(9, 27, 37) solid;
+
+} */
+.search {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+    color: #aeaeb6;
+}
+
+.search:focus {
+    background-color: #000000;
+    outline:rgb(255, 255, 255);
+}
+
+main {
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.movie {
+    background-color: #000000;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 4rem;
+    width: 200px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin: 0;
+}
+
+.movie-info span {
+    background-color: #000000;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+.movie-info span.green {
+    color: rgb(39, 189, 39);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: rgb(189, 42, 42);
+}
+ 
+.overview {
+    background-color: #FAF0E6;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+
+
+@media only screen and (max-width:764px) 
+{
+    
+    .search{
+      font-size: 10px;
+    }
+    header {
+        font-size:10px;
+    }
+    main{
+        width: 80%;
+    }
+.movie{
+    width: 80%;
+}
+  }
+
+
+  @media only screen and (max-width:1024px) and (min-width:764px)
+  
+  {
+    
+    .search{
+      font-size: 20px;
+    }
+    header {
+        font-size:20px;
+    }
+    main{
+        width: 100%;
+    }
+.movie{
+    width: 100%;
+}
+  }
+
+
